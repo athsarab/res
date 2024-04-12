@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Nairobi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* CSS for buttons */
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .button-container button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #03a34a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #028a3b;
+        }
+    </style>
+</head>
+<body onload="myFunction()">
+    <header>
+        <div class="logo"><a href="#">Restaurant Nairobi</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login-user.php">Admin Login</a></li>
+         
+                <li><a href="register.php">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <h2 id="head5"> </h2>
+            <table style="background: linear-gradient(90deg, transparent, #03a34a);box-sizing: border-box;
+                box-shadow: 0 15px 25px rgba(0,0,0,.6); border-radius: 10px; background: rgba(0,0,0,.4);">
+                <tr>
+                    <td colspan="3"><h1 id="head1"> </h1></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="recipeimages/chef.jfif" id="pic1">
+                    </td>
+                    <td id="td1">
+                        <p id="p2">
+                            Restaurant Nairobi is a French fine dining restaurant serving delightful plates of food in the nature of haute cuisine. The restaurant is located in the heart of Nairobi. The restaurant with its contemporary décor of coral stone-clad pillars, natural plants, and indoor pergola giving the feel of outdoors coupled with thoughtfully placed artistic pieces, soft lighting, and soft jazz playing in the background is not only romantic but is also group-friendly providing a fine dining backdrop for intimate and lively conversation over Chef Gordon’s mouth-watering French-themed dishes.
+                        </p>
+                        <br><br><br>
+                        <li >Already have an account</li>
+                        <!-- Buttons for login and register -->
+                        <div class="button-container">
+                            <button onclick="window.location.href='login.php';">Login</button>
+                           
+                        
+                        </div>
+                        <li >New user</li>
+                        <div class="button-container">
+                      
+                          <button onclick="window.location.href='register.php';">Register</button>
+                      </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer id="footer">
+            <p>At Restaurant Nairobi,Where We Strive For More</p>
+        </footer>
+    </div>
+</body>
+</html>

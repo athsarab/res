@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html">Home</a></div>
+    <nav>
+        <ul>
+            <li><a href="admin.html"> Welcome Admin</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
+
+	<div class="vertical-menu">
+  <a href="authors.html">Manage Authors</a>
+ <form action="auth.php" method="post">
+    <h1>Add Author</h1>
+<label for="Name">Author Name</label>
+    <input type="text" name="authorname" placeholder="Author name"><br>
+
+    <label for="Email">Author Email</label>
+    <input type="text"  name="authoremail" placeholder="Author Email"><br>
+     <label for="Address">Author Address</label>
+    <input type="text"  name="authoraddress" placeholder="Author Address"><br>
+    <input type="submit" value="Save" name="send">
+ <a href="displayauthors.php" style="text-decoration:none ;">Display Authors</a>
+</form>
+  </div>
+   
+
+
+</body>
+<footer>
+<p>At Restaurant Nairobi,Where We Strive For More</p>
+</footer>
+</html>

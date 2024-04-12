@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	<title></title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+<script src="//cdn.ckeditor.com/4.20.0/basic/ckeditor.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html">Home</a></div>
+    <nav>
+        <ul>
+            <li><a href="admin.html"> Welcome Admin</a></li>
+        </ul>
+    </div>
+    </nav>
+</header>
+
+	<div class="vertical-menu">
+  <a href="recipes.html">Manage Recipes</a>
+  </div>
+  <form id="forms" action="recipe1.php" method="post" enctype="multipart/form-data" >  
+    <h1>Recipe Module</h1>
+<label >Recipe Name</label>
+    <input type="text" name="recipename" placeholder="Recipe name"><br>
+
+    <label>Category</label>
+     <input type="text"  name="categoryname" placeholder="Category"><br>
+     <label>Author </label>
+     <textarea name="editor" id="author" placeholder="Author"></textarea>
+     <label>Ingredients </label>
+    <input type="text"  name="ingredients" placeholder="Ingredients "><br>
+     <label >Prep Method </label>
+    <input type="text"  name="prepmethod" placeholder="Prep method"><br>
+     <label >Prep Time </label>
+    <input type="text"  name="preptime" placeholder="Prep Time"><br>
+    <label >Cooking Time </label>
+    <input type="text"  name="cookingtime" placeholder="Cooking TIme"><br>
+     <label >Servings </label>
+      <input type="text"  name="servings" placeholder="Servings"><br>
+     <label >Image Name </label>
+    <input type="file" name="imagename" placeholder="Image Name"><br>
+    <input type="submit" value="Save recipe" name="skicka"><br>
+    <button><a href="displayrecipes.php" style="text-decoration:none;">Display Recipe</a></button>
+        <script src="ckeditor/ckeditor.js"></script>
+        <script> CKEDITOR.replace("editor");</script>
+  </form>
+<script>CKEDITOR.replace("editor");</script>
+
+</body>
+<footer>
+<p>At Restaurant Nairobi,Where We Strive For More</p>
+</footer>
+</div>
+</html>
